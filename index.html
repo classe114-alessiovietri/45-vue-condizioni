@@ -23,6 +23,17 @@
             </div>
 
             <div>
+                <h1 v-show="awesome" :class="h1Classes" :id="age + '-my-age-show'">
+                    <span>
+                        Si, Vue è super fico
+                    </span>
+                </h1>
+                <h1 v-show="awesome == false">
+                    In realtà no...
+                </h1>
+            </div>
+
+            <div>
                 <button @click="awesome = !awesome">
                     Inverti valore
                 </button>
